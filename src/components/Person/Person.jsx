@@ -3,13 +3,13 @@ export const Person = ({ person }) => {
 
   return (
     <section className="Person">
-      <p className="Person__name">{`My name is ${name}`}</p>
+      <h2 className="Person__name">{`My name is ${name}`}</h2>
 
-      {age && <p className="Person__age">I am {age} years old</p>}
+      {age && <p className="Person__age">{`I am ${age}`}</p>}
 
       {isMarried ? (
         <p className="Person__partner">
-          {`I am married to my ${sex === 'm' ? 'wife' : 'husband'} ${partnerName}`}
+          {`${partnerName} is my ${sex === 'm' ? 'wife' : 'husband'}`}
         </p>
       ) : (
         <p className="Person__partner">I am not married</p>
